@@ -21,9 +21,11 @@ public class ShapesFactory {
 	}
 	public boolean  deleteShape(Shape s)
 	{
-		if(s.equals(slist))
-			 slist.remove(s);
-		return false;
+		 if(slist.contains(s))
+                  {
+                     slist.remove(slist.indexOf(s)); 
+                  }
+                  return slist.contains(s);
 	}
 	
 	}
